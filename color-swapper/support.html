@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Color Swapper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header p {
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #333;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Home</a>
+
+        <header>
+            <h1>Support</h1>
+            <p>Color Swapper</p>
+        </header>
+
+        <div class="content">
+            <h2>Get Help</h2>
+            <p>Thank you for using Color Swapper! I'm committed to providing excellent support and ensuring you have the best experience swapping colors in your designs.</p>
+
+            <div class="contact-info">
+                <strong>Email Support:</strong><br>
+                <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a><br><br>
+                <strong>Response Time:</strong> Typically within 24-48 hours
+            </div>
+
+            <h2>Before Contacting Support</h2>
+            <p>Please include the following information in your support request:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>The filter you were using (All, Text, or Shapes)</li>
+                <li>What happened instead (error messages, unexpected behavior)</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p><strong>Q: Why doesn't the app detect all colors in my design?</strong></p>
+                <p>A: Color Swapper currently detects colors from text elements, shapes, and rectangles. Colors in images, gradients, or embedded elements are not detected as these require different APIs.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I swap colors across all pages?</strong></p>
+                <p>A: Currently, Color Swapper works on the current page only. You'll need to run it separately on each page of your design.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: I made a mistake. Can I undo the color changes?</strong></p>
+                <p>A: Yes! Use Canva's undo feature (Ctrl+Z on Windows or Cmd+Z on Mac) immediately after applying changes to revert them.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Why can't I see the "Apply changes" button?</strong></p>
+                <p>A: The Apply button only appears after you've scanned for colors and set at least one color replacement. Click "Set color" next to a scanned color to choose a replacement.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Why is the Apply button disabled?</strong></p>
+                <p>A: The Apply button is disabled until you set at least one color mapping. Scan for colors first, then click "Set color" to choose replacement colors.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I swap the same color to multiple different colors?</strong></p>
+                <p>A: No, each source color can only be mapped to one target color. If you need different replacements, you would need to do multiple passes.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Why don't I see any colors after scanning?</strong></p>
+                <p>A: Make sure your design has elements that match your selected filter. If you selected "Text" but only have shapes, no colors will be found. Try using the "All" filter.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Does this work with brand colors?</strong></p>
+                <p>A: Yes! When you click "Set color", the Canva color picker opens which includes your brand colors. You can easily select from your brand palette.</p>
+            </div>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea for a new feature? I'd love to hear it! Send your suggestions to <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a>.</p>
+
+            <h2>Report a Bug</h2>
+            <p>Found something that's not working correctly? Please email me with:</p>
+            <ul>
+                <li>Steps to reproduce the issue</li>
+                <li>What you expected to happen</li>
+                <li>What actually happened</li>
+                <li>Your browser and device (if relevant)</li>
+            </ul>
+        </div>
+
+        <footer>
+            © 2025 Naveen Bhavnani. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
