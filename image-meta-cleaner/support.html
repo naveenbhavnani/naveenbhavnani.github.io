@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Image Meta Cleaner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header p {
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #333;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Home</a>
+
+        <header>
+            <h1>Support</h1>
+            <p>Image Meta Cleaner</p>
+        </header>
+
+        <div class="content">
+            <h2>Get Help</h2>
+            <p>Thank you for using Image Meta Cleaner! I'm committed to providing excellent support and ensuring you have the best experience protecting your image privacy.</p>
+
+            <div class="contact-info">
+                <strong>Email Support:</strong><br>
+                <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a><br><br>
+                <strong>Response Time:</strong> Typically within 24-48 hours
+            </div>
+
+            <h2>How to Use the App</h2>
+            <ol style="margin-left: 25px; margin-bottom: 15px; color: #555;">
+                <li style="margin-bottom: 8px;"><strong>Upload an image:</strong> Click the file input to select a JPEG, PNG, WebP, or TIFF image</li>
+                <li style="margin-bottom: 8px;"><strong>Review metadata:</strong> The app will scan and display any embedded metadata found</li>
+                <li style="margin-bottom: 8px;"><strong>Clean metadata:</strong> Click "Clean metadata" to remove all hidden data</li>
+                <li style="margin-bottom: 8px;"><strong>Add to design:</strong> Drag or click the cleaned image to add it to your Canva design</li>
+            </ol>
+
+            <h2>Before Contacting Support</h2>
+            <p>Please include the following information in your support request:</p>
+            <ul>
+                <li>What you were trying to do</li>
+                <li>The image type you were processing (JPEG, PNG, etc.)</li>
+                <li>What happened instead (error messages, unexpected behavior)</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p><strong>Q: What types of metadata does the app remove?</strong></p>
+                <p>A: The app removes all EXIF, IPTC, and XMP metadata including GPS location, camera make/model, date/time taken, artist information, copyright notices, and software used.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: What image formats are supported?</strong></p>
+                <p>A: The app supports JPEG, PNG, WebP, and TIFF images. JPEG images typically contain the most metadata.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Will cleaning affect my image quality?</strong></p>
+                <p>A: The app re-encodes images at 95% quality for JPEG, which preserves excellent visual quality. PNG images are re-encoded losslessly. There may be minimal differences, but they are generally imperceptible.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Is my image uploaded to any server?</strong></p>
+                <p>A: No. All processing happens locally in your browser. Your images are never sent to any external server. The only upload occurs when you add the cleaned image to your Canva design (via Canva's official API).</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Why doesn't the app detect any metadata in my image?</strong></p>
+                <p>A: Not all images contain metadata. Screenshots, images already processed by some apps, or images from certain sources may have no embedded metadata.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I undo the metadata removal?</strong></p>
+                <p>A: The original file on your device is not modified. The app creates a new cleaned version. If you've already added the cleaned image to your Canva design, use Canva's undo feature (Ctrl+Z / Cmd+Z).</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Why does the app show "Privacy risks detected"?</strong></p>
+                <p>A: This warning appears when the app finds potentially sensitive data like GPS coordinates (which reveal where the photo was taken), camera information (which can identify your device), or timestamps.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I clean multiple images at once?</strong></p>
+                <p>A: Currently, the app processes one image at a time. After adding a cleaned image to your design, click "Clean another image" to process additional images.</p>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Important Note:</strong> This app is designed for legitimate privacy protection. Please do not use it to remove attribution or copyright information from images you do not own. See our <a href="terms.html">Terms of Service</a> for more details.</p>
+            </div>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea for a new feature? I'd love to hear it! Send your suggestions to <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a>.</p>
+
+            <h2>Report a Bug</h2>
+            <p>Found something that's not working correctly? Please email me with:</p>
+            <ul>
+                <li>Steps to reproduce the issue</li>
+                <li>What you expected to happen</li>
+                <li>What actually happened</li>
+                <li>The image format you were using</li>
+                <li>Your browser and device (if relevant)</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2025 Naveen Bhavnani. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
