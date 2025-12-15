@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - ABC Music Notation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header p {
+            color: white;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #333;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .cheatsheet {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .cheatsheet h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+        <header>
+            <h1>Support</h1>
+            <p>ABC Music Notation</p>
+        </header>
+
+        <div class="content">
+            <h2>Get Help</h2>
+            <p>Thank you for using ABC Music Notation! I'm committed to providing excellent support and ensuring you have the best experience creating sheet music for your designs.</p>
+
+            <div class="contact-info">
+                <strong>Email Support:</strong><br>
+                <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a><br><br>
+                <strong>Response Time:</strong> Typically within 24-48 hours
+            </div>
+
+            <h2>Before Contacting Support</h2>
+            <p>Please include the following information in your support request:</p>
+            <ul>
+                <li>What you were trying to do (e.g., render notation, add to design)</li>
+                <li>The ABC notation you were using (copy/paste if possible)</li>
+                <li>What happened instead (error messages, unexpected rendering)</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+
+            <h2>ABC Notation Quick Reference</h2>
+            <div class="cheatsheet">
+                <h3>Header Fields</h3>
+                <ul>
+                    <li><code>X:1</code> - Tune number (required)</li>
+                    <li><code>T:Title</code> - Tune title</li>
+                    <li><code>M:4/4</code> - Time signature (meter)</li>
+                    <li><code>L:1/8</code> - Default note length</li>
+                    <li><code>K:C</code> - Key signature (required, must be last header)</li>
+                </ul>
+                <h3>Notes</h3>
+                <ul>
+                    <li><code>C D E F G A B</code> - Middle octave notes</li>
+                    <li><code>c d e f g a b</code> - Higher octave (lowercase)</li>
+                    <li><code>C, D, E,</code> - Lower octave (comma after)</li>
+                    <li><code>c' d' e'</code> - Even higher octave (apostrophe)</li>
+                </ul>
+                <h3>Note Lengths</h3>
+                <ul>
+                    <li><code>A2</code> - Half note (2x default)</li>
+                    <li><code>A4</code> - Whole note (4x default)</li>
+                    <li><code>A/</code> or <code>A/2</code> - Eighth note (half default)</li>
+                    <li><code>z</code> - Rest</li>
+                </ul>
+                <h3>Accidentals & Symbols</h3>
+                <ul>
+                    <li><code>^C</code> - Sharp</li>
+                    <li><code>_C</code> - Flat</li>
+                    <li><code>=C</code> - Natural</li>
+                    <li><code>|</code> - Bar line</li>
+                    <li><code>|:</code> and <code>:|</code> - Repeat signs</li>
+                </ul>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p><strong>Q: What is ABC notation?</strong></p>
+                <p>A: ABC notation is a text-based music notation system that uses letters and symbols to represent musical notes. It's a simple way to write and share music without needing special software. Letters A-G represent notes, and various symbols modify pitch, duration, and more.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: My notation isn't rendering. What's wrong?</strong></p>
+                <p>A: Make sure your ABC notation includes at minimum:</p>
+                <ul>
+                    <li><code>X:1</code> - A tune number</li>
+                    <li><code>K:C</code> - A key signature (must be the last header line)</li>
+                    <li>At least one note after the headers</li>
+                </ul>
+                <p>Example: <code>X:1</code> (new line) <code>K:C</code> (new line) <code>C D E F</code></p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Why is my title not showing?</strong></p>
+                <p>A: Add the <code>T:</code> header field. For example: <code>T:My Song</code>. The title will appear above the staff in the rendered output.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: How do I add sharps and flats?</strong></p>
+                <p>A: Use <code>^</code> for sharp and <code>_</code> for flat before the note. Examples: <code>^F</code> (F sharp), <code>_B</code> (B flat), <code>=F</code> (F natural to cancel a key signature accidental).</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: How do I write chords?</strong></p>
+                <p>A: Put notes inside square brackets. Example: <code>[CEG]</code> creates a C major chord (C, E, and G played together).</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I add lyrics?</strong></p>
+                <p>A: Yes! Add a line starting with <code>w:</code> after your music line. Each syllable is separated by spaces, and hyphens connect syllables of the same word. Example:<br>
+                <code>C D E F | G2 G2</code><br>
+                <code>w:Twin-kle twin-kle lit-tle star</code></p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: The "Add to design" button is disabled. Why?</strong></p>
+                <p>A: The button is disabled until valid notation with at least one note is entered. Make sure you have proper headers (X: and K:) followed by actual notes, not just header fields.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I use this for copyrighted music?</strong></p>
+                <p>A: You're responsible for ensuring you have rights to any music you transcribe. Public domain music and your own compositions are fine. For copyrighted works, obtain permission from the rights holder.</p>
+            </div>
+
+            <h2>Learn More About ABC Notation</h2>
+            <p>For comprehensive ABC notation documentation:</p>
+            <ul>
+                <li><a href="https://abcnotation.com/wiki/abc:standard:v2.1" target="_blank">Official ABC Notation Standard</a></li>
+                <li><a href="https://abcnotation.com/" target="_blank">ABCnotation.com</a> - Tutorials and examples</li>
+                <li><a href="https://github.com/paulrosen/abcjs" target="_blank">abcjs Library Documentation</a></li>
+            </ul>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea for a new feature? I'd love to hear it! Send your suggestions to <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a>.</p>
+
+            <h2>Report a Bug</h2>
+            <p>Found something that's not working correctly? Please email me with:</p>
+            <ul>
+                <li>Steps to reproduce the issue</li>
+                <li>The ABC notation that caused the problem</li>
+                <li>What you expected to happen</li>
+                <li>What actually happened</li>
+                <li>Screenshots if possible</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2025 Naveen Bhavnani. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
