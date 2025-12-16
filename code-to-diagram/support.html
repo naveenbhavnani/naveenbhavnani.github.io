@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Code to Diagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header p {
+            color: white;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #333;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        pre {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+
+        .cheatsheet {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .cheatsheet h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        .syntax-section {
+            border-left: 3px solid #667eea;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        .syntax-section h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+        <header>
+            <h1>Support</h1>
+            <p>Code to Diagram</p>
+        </header>
+
+        <div class="content">
+            <h2>Get Help</h2>
+            <p>Thank you for using Code to Diagram! I'm committed to providing excellent support and ensuring you have the best experience creating diagrams for your designs.</p>
+
+            <div class="contact-info">
+                <strong>Email Support:</strong><br>
+                <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a><br><br>
+                <strong>Response Time:</strong> Typically within 24-48 hours
+            </div>
+
+            <h2>Before Contacting Support</h2>
+            <p>Please include the following information in your support request:</p>
+            <ul>
+                <li>Which syntax you were using (DOT, Nomnoml, or WaveDrom)</li>
+                <li>The diagram code you were using (copy/paste if possible)</li>
+                <li>What happened instead (error messages, unexpected rendering)</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+
+            <h2>Supported Diagram Types</h2>
+
+            <div class="syntax-section">
+                <h4>DOT (Graphviz) - Flowcharts & Directed Graphs</h4>
+                <p>Best for: Flowcharts, state machines, dependency graphs, network diagrams</p>
+                <div class="cheatsheet">
+                    <h3>DOT Quick Reference</h3>
+                    <ul>
+                        <li><code>digraph G { A -> B }</code> - Basic directed graph</li>
+                        <li><code>node [shape=box]</code> - Rectangle nodes</li>
+                        <li><code>node [shape=ellipse]</code> - Oval nodes (default)</li>
+                        <li><code>node [shape=diamond]</code> - Decision nodes</li>
+                        <li><code>[style=filled, fillcolor=lightblue]</code> - Colored nodes</li>
+                        <li><code>A [label="Custom Label"]</code> - Node labels</li>
+                        <li><code>A -> B [label="text"]</code> - Edge labels</li>
+                        <li><code>rankdir=TB</code> - Top to bottom layout</li>
+                        <li><code>rankdir=LR</code> - Left to right layout</li>
+                    </ul>
+                </div>
+                <p><strong>Example:</strong></p>
+                <pre>digraph G {
+  rankdir=TB
+  Start [shape=ellipse]
+  Process [shape=box]
+  Decision [shape=diamond]
+  Start -> Process
+  Process -> Decision
+}</pre>
+            </div>
+
+            <div class="syntax-section">
+                <h4>Nomnoml - UML Class Diagrams</h4>
+                <p>Best for: Class diagrams, object relationships, software architecture</p>
+                <div class="cheatsheet">
+                    <h3>Nomnoml Quick Reference</h3>
+                    <ul>
+                        <li><code>[ClassName]</code> - Simple class</li>
+                        <li><code>[ClassName| +field: type | +method()]</code> - Class with fields and methods</li>
+                        <li><code>[A] -> [B]</code> - Association (directed)</li>
+                        <li><code>[A] - [B]</code> - Association (undirected)</li>
+                        <li><code>[Child] -:> [Parent]</code> - Inheritance</li>
+                        <li><code>[Whole] +--> [Part]</code> - Composition</li>
+                        <li><code>[Whole] o--> [Part]</code> - Aggregation</li>
+                        <li><code>[&lt;note&gt; This is a note]</code> - Note</li>
+                    </ul>
+                </div>
+                <p><strong>Example:</strong></p>
+                <pre>[User| +name: string | +login()]
+[Application| -config | +start()]
+[User] -> [Application]</pre>
+            </div>
+
+            <div class="syntax-section">
+                <h4>WaveDrom - Digital Timing Diagrams</h4>
+                <p>Best for: Digital signal timing, waveforms, protocol documentation</p>
+                <div class="cheatsheet">
+                    <h3>WaveDrom Quick Reference</h3>
+                    <ul>
+                        <li><code>"wave": "p"</code> - Positive edge clock</li>
+                        <li><code>"wave": "n"</code> - Negative edge clock</li>
+                        <li><code>"wave": "0"</code> - Low signal</li>
+                        <li><code>"wave": "1"</code> - High signal</li>
+                        <li><code>"wave": "x"</code> - Unknown/invalid</li>
+                        <li><code>"wave": "="</code> - Data (use with data array)</li>
+                        <li><code>"wave": "."</code> - Continue previous state</li>
+                        <li><code>"data": ["A", "B"]</code> - Data values</li>
+                    </ul>
+                </div>
+                <p><strong>Example:</strong></p>
+                <pre>{ "signal": [
+  { "name": "clk", "wave": "p......" },
+  { "name": "data", "wave": "x.345x.", "data": ["A", "B", "C"] },
+  { "name": "req", "wave": "0.1..0." }
+]}</pre>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p><strong>Q: My diagram shows "Invalid syntax". What's wrong?</strong></p>
+                <p>A: Each syntax type has specific requirements:</p>
+                <ul>
+                    <li><strong>DOT:</strong> Must start with <code>digraph</code> or <code>graph</code></li>
+                    <li><strong>Nomnoml:</strong> Use square brackets for classes: <code>[ClassName]</code></li>
+                    <li><strong>WaveDrom:</strong> Must be valid JSON starting with <code>{ "signal": [</code></li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: The "Add to design" button is disabled. Why?</strong></p>
+                <p>A: The button is disabled until valid diagram code is entered. Make sure your syntax is correct and the preview shows a valid diagram.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I use this for complex enterprise architecture diagrams?</strong></p>
+                <p>A: Yes! DOT (Graphviz) and Nomnoml can handle quite complex diagrams. However, for very large diagrams with hundreds of nodes, rendering may take longer or the preview may be cramped. Consider breaking large diagrams into smaller sections.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Why does my WaveDrom code show an error?</strong></p>
+                <p>A: WaveDrom requires valid JSON format. Common issues:</p>
+                <ul>
+                    <li>Missing quotes around property names</li>
+                    <li>Trailing commas after the last item</li>
+                    <li>Single quotes instead of double quotes</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I customize colors and styles?</strong></p>
+                <p>A: Yes!</p>
+                <ul>
+                    <li><strong>DOT:</strong> Use <code>fillcolor</code>, <code>color</code>, <code>style</code> attributes</li>
+                    <li><strong>Nomnoml:</strong> Use directives like <code>#fill: #colorcode</code></li>
+                    <li><strong>WaveDrom:</strong> Colors are determined by signal states</li>
+                </ul>
+            </div>
+
+            <h2>Learn More</h2>
+            <p>For comprehensive documentation on each syntax:</p>
+            <ul>
+                <li><a href="https://graphviz.org/doc/info/lang.html" target="_blank">DOT Language Reference (Graphviz)</a></li>
+                <li><a href="https://nomnoml.com/" target="_blank">Nomnoml Official Site</a></li>
+                <li><a href="https://wavedrom.com/tutorial.html" target="_blank">WaveDrom Tutorial</a></li>
+            </ul>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea for a new feature or syntax support? I'd love to hear it! Send your suggestions to <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a>.</p>
+
+            <h2>Report a Bug</h2>
+            <p>Found something that's not working correctly? Please email me with:</p>
+            <ul>
+                <li>Steps to reproduce the issue</li>
+                <li>The diagram code that caused the problem</li>
+                <li>Which syntax type you were using</li>
+                <li>What you expected to happen</li>
+                <li>What actually happened</li>
+                <li>Screenshots if possible</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2025 Naveen Bhavnani. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
