@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Nomnoml Diagrams</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header p {
+            color: white;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #333;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .cheatsheet {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .cheatsheet h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+        <header>
+            <h1>Support</h1>
+            <p>Nomnoml Diagrams</p>
+        </header>
+
+        <div class="content">
+            <h2>Get Help</h2>
+            <p>Thank you for using Nomnoml Diagrams! I'm committed to providing excellent support and ensuring you have the best experience creating UML diagrams for your designs.</p>
+
+            <div class="contact-info">
+                <strong>Email Support:</strong><br>
+                <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a><br><br>
+                <strong>Response Time:</strong> Typically within 24-48 hours
+            </div>
+
+            <h2>Before Contacting Support</h2>
+            <p>Please include the following information in your support request:</p>
+            <ul>
+                <li>What you were trying to do (e.g., render diagram, add to design)</li>
+                <li>The nomnoml syntax you were using (copy/paste if possible)</li>
+                <li>What happened instead (error messages, unexpected rendering)</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+
+            <h2>Nomnoml Syntax Quick Reference</h2>
+            <div class="cheatsheet">
+                <h3>Basic Syntax</h3>
+                <ul>
+                    <li><code>[ClassName]</code> - Define a class/box</li>
+                    <li><code>[A] -> [B]</code> - Association (arrow)</li>
+                    <li><code>[A] - [B]</code> - Line without arrow</li>
+                    <li><code>[A] <-> [B]</code> - Bidirectional arrow</li>
+                </ul>
+                <h3>Relationships</h3>
+                <ul>
+                    <li><code>[A] -:> [B]</code> - Dependency (dashed arrow)</li>
+                    <li><code>[A] --:> [B]</code> - Realization</li>
+                    <li><code>[A] -/- [B]</code> - Line with X (hidden)</li>
+                    <li><code>[A] o-> [B]</code> - Aggregation</li>
+                    <li><code>[A] +-> [B]</code> - Composition</li>
+                    <li><code>[A] <:- [B]</code> - Inheritance</li>
+                </ul>
+                <h3>Class Details</h3>
+                <ul>
+                    <li><code>[A|field1;field2]</code> - Class with fields</li>
+                    <li><code>[A|field|method()]</code> - Class with fields and methods</li>
+                    <li><code>[&lt;abstract&gt;A]</code> - Abstract class</li>
+                    <li><code>[&lt;interface&gt;I]</code> - Interface</li>
+                </ul>
+                <h3>Styling</h3>
+                <ul>
+                    <li><code>#direction: down</code> - Layout direction (down, right)</li>
+                    <li><code>#.important: fill=#f00</code> - Custom style</li>
+                    <li><code>[&lt;important&gt;A]</code> - Apply custom style</li>
+                </ul>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p><strong>Q: What is nomnoml?</strong></p>
+                <p>A: Nomnoml is a text-based diagramming tool for drawing UML diagrams. It uses a simple syntax where square brackets define elements and arrows define relationships. It's great for quickly sketching out class diagrams, flowcharts, and more.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: My diagram isn't rendering. What's wrong?</strong></p>
+                <p>A: Check for common syntax errors:</p>
+                <ul>
+                    <li>Make sure brackets are properly closed: <code>[ClassName]</code></li>
+                    <li>Use proper arrow syntax: <code>-></code> not <code>=></code></li>
+                    <li>Each element needs square brackets</li>
+                </ul>
+                <p>Example: <code>[User] -> [Database]</code></p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: How do I add methods and properties to a class?</strong></p>
+                <p>A: Use the pipe character to separate sections:<br>
+                <code>[ClassName|property1;property2|method1();method2()]</code></p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I change the diagram direction?</strong></p>
+                <p>A: Yes! Add a directive at the top of your diagram:<br>
+                <code>#direction: down</code> or <code>#direction: right</code></p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: How do I create different arrow types?</strong></p>
+                <p>A: Nomnoml supports various relationship types:</p>
+                <ul>
+                    <li><code>[A] -> [B]</code> - Simple arrow</li>
+                    <li><code>[A] <:- [B]</code> - Inheritance (B inherits from A)</li>
+                    <li><code>[A] o-> [B]</code> - Aggregation</li>
+                    <li><code>[A] +-> [B]</code> - Composition</li>
+                    <li><code>[A] -:> [B]</code> - Dependency (dashed)</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: The "Add to design" button is disabled. Why?</strong></p>
+                <p>A: The button is disabled until valid diagram syntax is entered. Make sure you have at least one element defined with proper square brackets.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I style my diagram?</strong></p>
+                <p>A: Yes! Use directives to customize appearance:<br>
+                <code>#fill: #ffeeff</code> - Background color<br>
+                <code>#stroke: #333</code> - Border color<br>
+                <code>#fontSize: 14</code> - Font size</p>
+            </div>
+
+            <h2>Learn More About Nomnoml</h2>
+            <p>For comprehensive nomnoml documentation:</p>
+            <ul>
+                <li><a href="https://nomnoml.com/" target="_blank">Official Nomnoml Website</a> - Live editor and examples</li>
+                <li><a href="https://github.com/skanaar/nomnoml" target="_blank">Nomnoml GitHub Repository</a> - Source code and documentation</li>
+            </ul>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea for a new feature? I'd love to hear it! Send your suggestions to <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a>.</p>
+
+            <h2>Report a Bug</h2>
+            <p>Found something that's not working correctly? Please email me with:</p>
+            <ul>
+                <li>Steps to reproduce the issue</li>
+                <li>The nomnoml syntax that caused the problem</li>
+                <li>What you expected to happen</li>
+                <li>What actually happened</li>
+                <li>Screenshots if possible</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2025 Naveen Bhavnani. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
