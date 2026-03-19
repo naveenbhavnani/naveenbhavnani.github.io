@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Sankey Diagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header p {
+            color: white;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #333;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .cheatsheet {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .cheatsheet h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+        <header>
+            <h1>Support</h1>
+            <p>Sankey Diagram</p>
+        </header>
+
+        <div class="content">
+            <h2>Get Help</h2>
+            <p>Thank you for using Sankey Diagram! I'm committed to providing excellent support and ensuring you have the best experience creating Sankey diagrams for your designs.</p>
+
+            <div class="contact-info">
+                <strong>Email Support:</strong><br>
+                <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a><br><br>
+                <strong>Response Time:</strong> Typically within 24-48 hours
+            </div>
+
+            <h2>Before Contacting Support</h2>
+            <p>Please include the following information in your support request:</p>
+            <ul>
+                <li>What you were trying to do (e.g., generate diagram, add to design)</li>
+                <li>The CSV data you were using (copy/paste if possible)</li>
+                <li>What happened instead (error messages, unexpected rendering)</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+
+            <h2>CSV Format Quick Reference</h2>
+            <div class="cheatsheet">
+                <h3>Basic Format</h3>
+                <p>Each line should contain three values separated by commas:</p>
+                <p><code>Source, Target, Value</code></p>
+                <h3>Example</h3>
+                <ul>
+                    <li><code>Revenue, Expenses, 500</code></li>
+                    <li><code>Revenue, Savings, 300</code></li>
+                    <li><code>Expenses, Rent, 200</code></li>
+                    <li><code>Expenses, Food, 150</code></li>
+                    <li><code>Expenses, Transport, 150</code></li>
+                </ul>
+                <h3>Tips</h3>
+                <ul>
+                    <li>Values must be positive numbers</li>
+                    <li>Node names are case-sensitive</li>
+                    <li>Spaces around commas are automatically trimmed</li>
+                    <li>Empty lines are ignored</li>
+                </ul>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p><strong>Q: What is a Sankey diagram?</strong></p>
+                <p>A: A Sankey diagram is a flow diagram where the width of the arrows or links is proportional to the flow quantity. They are commonly used to visualize energy transfers, budget allocations, website traffic flows, and more.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: My diagram isn't rendering. What's wrong?</strong></p>
+                <p>A: Check for common issues:</p>
+                <ul>
+                    <li>Ensure each line has exactly three values: <code>Source, Target, Value</code></li>
+                    <li>Values must be positive numbers (not zero or negative)</li>
+                    <li>Make sure there are no circular references (e.g., A flows to B and B flows back to A)</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I change the colors of the diagram?</strong></p>
+                <p>A: Yes! The App provides multiple color schemes to choose from. Select your preferred scheme before adding the diagram to your design.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I show or hide the value labels?</strong></p>
+                <p>A: Yes! Use the diagram options to toggle value labels on or off, adjust link opacity, and set the background style.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: The "Add to Design" button is disabled. Why?</strong></p>
+                <p>A: The button may be disabled if the current Canva page type does not support adding elements. Try switching to a standard design page.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I edit the diagram after adding it to my design?</strong></p>
+                <p>A: The diagram is added as an image. To make changes, update your CSV data and color scheme in the App, then add the updated diagram to your design.</p>
+            </div>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea for a new feature? I'd love to hear it! Send your suggestions to <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a>.</p>
+
+            <h2>Report a Bug</h2>
+            <p>Found something that's not working correctly? Please email me with:</p>
+            <ul>
+                <li>Steps to reproduce the issue</li>
+                <li>The CSV data that caused the problem</li>
+                <li>What you expected to happen</li>
+                <li>What actually happened</li>
+                <li>Screenshots if possible</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2026 Naveen Bhavnani. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
