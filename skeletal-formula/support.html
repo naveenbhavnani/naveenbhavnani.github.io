@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Skeletal Formula</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header p {
+            color: white;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact-info strong {
+            color: #333;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+        <header>
+            <h1>Support</h1>
+            <p>Skeletal Formula</p>
+        </header>
+
+        <div class="content">
+            <h2>Get Help</h2>
+            <p>Thank you for using Skeletal Formula! I'm committed to providing excellent support and ensuring you have the best experience creating molecular structure diagrams for your designs.</p>
+
+            <div class="contact-info">
+                <strong>Email Support:</strong><br>
+                <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a><br><br>
+                <strong>Response Time:</strong> Typically within 24-48 hours
+            </div>
+
+            <h2>Before Contacting Support</h2>
+            <p>Please include the following information in your support request:</p>
+            <ul>
+                <li>What you were trying to do (e.g., search a molecule, render a diagram, add to design)</li>
+                <li>The molecule name, SMILES string, or search query you were using</li>
+                <li>What happened instead (error messages, unexpected rendering)</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p><strong>Q: What is a skeletal formula?</strong></p>
+                <p>A: A skeletal formula (also called a bond-line diagram) is the standard way to draw molecular structures in chemistry. Carbon atoms are implied at vertices and line endpoints, hydrogen atoms on carbons are omitted, and heteroatoms (N, O, S, etc.) are shown explicitly. It's the most common diagram type in organic chemistry textbooks and papers.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: What is SMILES notation?</strong></p>
+                <p>A: SMILES (Simplified Molecular-Input Line-Entry System) is a text-based way to represent molecular structures. For example, <code>c1ccccc1</code> represents benzene, and <code>CC(=O)Oc1ccccc1C(=O)O</code> represents aspirin. You can paste SMILES strings directly into the App to render diagrams without needing an internet connection.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: My molecule search returned no results. What should I try?</strong></p>
+                <p>A: Try the following:</p>
+                <ul>
+                    <li>Check the spelling of the molecule name</li>
+                    <li>Try an alternative name (e.g., "acetylsalicylic acid" instead of "aspirin")</li>
+                    <li>Search by molecular formula (e.g., <code>C9H8O4</code>)</li>
+                    <li>Search by CAS number if you have it (e.g., <code>50-78-2</code>)</li>
+                    <li>Paste the SMILES string directly if you have one</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: The diagram doesn't look right. What can I do?</strong></p>
+                <p>A: The rendering engine handles most common molecules well, but complex structures may occasionally render imperfectly. Try adjusting the size or theme settings. If the issue persists, please email me with the molecule name or SMILES string so I can investigate.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Do I need an internet connection?</strong></p>
+                <p>A: An internet connection is required for searching molecules by name, formula, or CAS number (these use the PubChem API). However, if you enter a SMILES string directly, the diagram renders entirely in your browser with no internet needed.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: What molecules can I search for?</strong></p>
+                <p>A: The App can search over 119 million molecules in the PubChem database. This covers virtually every molecule you'd encounter in education, research, or industry — from simple molecules like water to complex drugs and natural products.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: Can I use the diagrams in my publications or educational materials?</strong></p>
+                <p>A: Yes! The diagrams you generate are yours to use freely for any purpose — personal, educational, or commercial. Molecular structures are scientific facts and are not subject to copyright.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: The "Add to Design" button is disabled. Why?</strong></p>
+                <p>A: The button is disabled until a valid molecule has been selected and a diagram has been rendered in the preview. Make sure you've selected a molecule from the search results or entered a valid SMILES string.</p>
+            </div>
+
+            <div class="faq-item">
+                <p><strong>Q: I'm getting a network error when searching.</strong></p>
+                <p>A: This usually means the PubChem API is temporarily unavailable. Wait a moment and try again. If the issue persists, you can still use the App by entering SMILES strings directly.</p>
+            </div>
+
+            <h2>Learn More</h2>
+            <p>For more information about molecular structures and SMILES notation:</p>
+            <ul>
+                <li><a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank">PubChem</a> - Search and explore molecule data</li>
+                <li><a href="https://en.wikipedia.org/wiki/Skeletal_formula" target="_blank">Skeletal Formula</a> - Wikipedia overview</li>
+                <li><a href="https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system" target="_blank">SMILES Notation</a> - Wikipedia overview</li>
+            </ul>
+
+            <h2>Feature Requests</h2>
+            <p>Have an idea for a new feature? I'd love to hear it! Send your suggestions to <a href="mailto:bhavnani.naveen@gmail.com">bhavnani.naveen@gmail.com</a>.</p>
+
+            <h2>Report a Bug</h2>
+            <p>Found something that's not working correctly? Please email me with:</p>
+            <ul>
+                <li>Steps to reproduce the issue</li>
+                <li>The molecule name or SMILES string that caused the problem</li>
+                <li>What you expected to happen</li>
+                <li>What actually happened</li>
+                <li>Screenshots if possible</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2026 Naveen Bhavnani. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
