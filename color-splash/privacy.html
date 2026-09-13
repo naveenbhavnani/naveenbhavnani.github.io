@@ -122,12 +122,12 @@
 </head>
 <body>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Home</a>
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
 
         <header>
             <h1>Privacy Policy</h1>
             <p style="font-size: 1.2em; margin-bottom: 5px;">Color Splash</p>
-            <p class="last-updated">Last Updated: March 18, 2026</p>
+            <p class="last-updated">Last Updated: September 14, 2026</p>
         </header>
 
         <div class="content">
@@ -135,54 +135,50 @@
             <p>Color Splash ("the App") is a Canva app developed by Naveen Bhavnani that transforms images so the main subject stays in color while the background becomes grayscale.</p>
 
             <div class="highlight-box">
-                <p><strong>Summary: We do NOT collect, store, or share any personal information. Images are processed temporarily and immediately discarded.</strong></p>
+                <p><strong>Summary:</strong> The image you choose is sent to our server only to apply the effect, and it is not stored. To keep track of credits, the App stores your Canva user ID alongside your credit balance. Payments are handled by Gumroad, and we never see your card details.</p>
             </div>
 
             <h2>Information We Collect</h2>
-            <p><strong>We do NOT collect any personal information or user data.</strong></p>
-            <p>The App operates within the Canva platform and:</p>
+            <p>The App collects only what it needs to process images and run its credit system:</p>
             <ul>
-                <li>Does not require user login or authentication beyond Canva</li>
-                <li>Does not collect names, email addresses, or contact information</li>
-                <li>Does not track user behavior or analytics</li>
-                <li>Does not use cookies or tracking technologies</li>
-                <li>Does not store any user data permanently</li>
+                <li><strong>Your Canva user ID</strong>, an anonymous identifier provided by Canva. It is not your name or email address.</li>
+                <li><strong>Your credit balance</strong>, and how many credits you have used and purchased.</li>
+                <li><strong>A history of credit changes</strong>, such as a credit used for an image, a credit returned after failed processing, or credits added by a purchase.</li>
+                <li><strong>Purchase references</strong>: the Gumroad order ID and the credit pack purchased, used to add credits to your account exactly once.</li>
+                <li><strong>Timestamps</strong> of when you first and last used the App.</li>
+            </ul>
+
+            <p>The App does <strong>not</strong>:</p>
+            <ul>
+                <li>Store your images or the processed results</li>
+                <li>Upload your design to our servers</li>
+                <li>Use analytics, advertising or tracking technologies</li>
+                <li>Use cookies</li>
+                <li>Sell or share your information with anyone</li>
             </ul>
 
             <h2>How the App Works</h2>
-            <p>When you use Color Splash:</p>
             <ul>
-                <li>You select an image on your Canva design</li>
-                <li>Optionally, you describe which subject to keep in color</li>
-                <li>The image is sent to a backend server for processing</li>
-                <li>The processed image (with the color splash effect applied) is returned to your Canva design</li>
-            </ul>
-
-            <h2>Data Processing</h2>
-            <p>The App processes image data as follows:</p>
-            <ul>
-                <li>Your selected image is temporarily sent to our processing server via a secure connection</li>
-                <li>The image is processed solely to apply the color splash effect</li>
-                <li>The optional text prompt (subject description) is used only for processing and is not stored</li>
-                <li>Processed images are returned to Canva and immediately discarded from the server</li>
-                <li>No images, prompts, or results are retained after processing is complete</li>
+                <li>You select an image in your Canva design, or upload one. An uploaded image is added to your Canva uploads through Canva's official APIs.</li>
+                <li>The App sends our processing server a temporary link to the image, provided by Canva. The server downloads the image over a secure connection.</li>
+                <li>The server detects the main subject and applies the effect itself. The image is not sent to any other service for processing.</li>
+                <li>The result is held in the server's memory until the App collects it, then discarded. Nothing is written to disk or to a database, and any result not collected is discarded within 15 minutes.</li>
+                <li>When you check your balance or apply the effect, the App sends a request to our servers, identified by a token Canva issues for your account.</li>
+                <li>When you buy credits, the App opens a Gumroad checkout page carrying a one-time code, so the purchase can be linked back to your account.</li>
+                <li>If you enter a license key from a Gumroad receipt, it is sent to our credits server and checked with Gumroad to add the credits. The key you enter is not stored.</li>
             </ul>
 
             <h2>Payment Information</h2>
-            <p>The App uses a credit-based model. When you purchase credits:</p>
             <ul>
-                <li>All payments are processed by <strong>Lemon Squeezy</strong>, a third-party payment processor</li>
-                <li>We do <strong>not</strong> collect, store, or have access to your payment card details, billing address, or other financial information</li>
-                <li>Lemon Squeezy handles all payment data in accordance with their own <a href="https://www.lemonsqueezy.com/privacy" target="_blank">Privacy Policy</a></li>
-                <li>We only receive confirmation of your purchase (order ID and credit pack purchased) to add credits to your account</li>
-                <li>Your Canva user ID is associated with your credit balance to track usage</li>
+                <li>All payments are processed by <a href="https://gumroad.com/privacy" target="_blank">Gumroad</a>, a third-party payment processor.</li>
+                <li>We do not collect, store or have access to your payment card details or billing address.</li>
+                <li>Gumroad sends us order details for each purchase, including the email address on the order, so we can confirm the purchase and help with refunds. We use these details only to add credits and to handle support and refund requests.</li>
             </ul>
 
             <h2>Third-Party Services</h2>
-            <p>The App uses the following third-party services:</p>
             <ul>
-                <li><strong>Backend processing server:</strong> Only receives image data necessary for processing. Does not store or log any user images or prompts.</li>
-                <li><strong>Lemon Squeezy:</strong> Processes payments for credit purchases. See their <a href="https://www.lemonsqueezy.com/privacy" target="_blank">Privacy Policy</a> for details on how they handle payment data.</li>
+                <li><strong>Railway</strong> hosts our processing server, our credits server and its database.</li>
+                <li><strong>Gumroad</strong> processes payments for credit purchases. See <a href="https://gumroad.com/privacy" target="_blank">Gumroad's Privacy Policy</a>.</li>
             </ul>
             <p>We do not share data with any analytics platforms or advertising networks.</p>
 
@@ -194,20 +190,23 @@
             </ul>
             <p>Canva may collect data about your use of their platform according to their own privacy policy. This App does not have access to or control over Canva's data collection practices.</p>
 
+            <h2>Data Retention</h2>
+            <p>Images and results are not retained after processing. Your credit balance, credit history and purchase details are kept for as long as you use the App, so purchased credits remain available to you. You can ask us to delete them at any time, as described below.</p>
+
             <h2>Children's Privacy</h2>
             <p>The App does not knowingly collect information from children under 13 years of age. The App is designed for general users and is not directed at children.</p>
 
             <h2>Data Security</h2>
-            <p>Image data is transmitted securely between the Canva platform and our processing server. Since we do not permanently store any user data, there is no persistent user data at risk.</p>
+            <p>All communication between the App and our servers is encrypted over HTTPS, and every request is verified with a token issued by Canva. Access to the database is restricted to the developer.</p>
 
             <h2>Your Rights</h2>
-            <p>Since we do not permanently collect or store any personal data, there is no data to access, modify, or delete. Images and prompts exist only temporarily during processing and are discarded immediately after.</p>
+            <p>You may ask us to access or delete the data associated with your Canva account. Email us and we will respond within 30 days. Deleting your data also removes any unused credits.</p>
 
             <h2>Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically.</p>
 
             <h2>International Users</h2>
-            <p>The App is available globally through the Canva platform. Image data may be temporarily processed on servers located outside your country of residence. Since no data is stored permanently, there are no long-term cross-border data transfer concerns.</p>
+            <p>The App is available globally through the Canva platform. Images are processed, and credit data is stored, on servers that may be located outside your country of residence.</p>
 
             <h2>Contact Us</h2>
             <p>If you have any questions or concerns about this Privacy Policy or the App's data practices, please contact:</p>
